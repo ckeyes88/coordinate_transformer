@@ -8,6 +8,7 @@ defmodule CoordinateTransformer.Mixfile do
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     package: package,
      deps: deps()]
   end
 
@@ -38,5 +39,15 @@ defmodule CoordinateTransformer.Mixfile do
     A small library of composable to manipulate 3-D cartesian coordinates using transformation matrices 
     and matrix multiplication.
     """
+  end
+
+  defp package do
+    [
+      name: ["Coordinate Transformer"],
+      files: ["lib", "mix.exs", "README.md"],
+      maintainers: ["Chip Keyes"],
+      licenses: ["GNU General Public License"],
+      links: %{"Github" => "https://github.com/ckeyes88/coordinate_transformer"}
+    ]
   end
 end
