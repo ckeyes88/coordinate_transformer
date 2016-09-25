@@ -3,6 +3,6 @@ defmodule CoordinateTransformerTest do
   doctest CoordinateTransformer
 
   test "should scale a vector in the x direction using scale" do
-    assert CoordinateTransformer.scale(%{:x })
+    assert 2+2=5
   end
 end
