@@ -3,12 +3,12 @@ defmodule CoordinateTransformer.Mixfile do
 
   def project do
     [app: :coordinate_transformer,
-     version: "0.0.0",
+     version: "0.0.1",
      description: description(),
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     package: package,
+     package: package(),
      deps: deps()]
   end
 
@@ -44,9 +44,9 @@ defmodule CoordinateTransformer.Mixfile do
   defp package do
     [
       name: ["Coordinate Transformer"],
-      files: ["lib", "mix.exs", "README.md"],
+      files: ["lib", "mix.exs", "README*"],
       maintainers: ["Chip Keyes"],
-      licenses: ["GNU General Public License"],
+      licenses: ["MIT"],
       links: %{"Github" => "https://github.com/ckeyes88/coordinate_transformer"}
     ]
   end
