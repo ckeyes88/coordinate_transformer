@@ -4,16 +4,16 @@ defmodule CoordinateTransformer.Mixfile do
   def project do
     [app: :coordinate_transformer,
      version: "0.0.1",
-     description: description(),
+     description: description,
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     package: package(),
-     deps: deps()]
+     package: package,
+     deps: deps]
   end
 
   # Configuration for the OTP application
-  #
+  # 
   # Type "mix help compile.app" for more information
   def application do
     [applications: [:logger]]
@@ -43,7 +43,6 @@ defmodule CoordinateTransformer.Mixfile do
 
   defp package do
     [
-      name: ["Coordinate Transformer"],
       files: ["lib", "mix.exs", "README*"],
       maintainers: ["Chip Keyes"],
       licenses: ["MIT"],
